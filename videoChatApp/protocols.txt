@@ -1,0 +1,17 @@
+#client protocols:
+
+#register - 0,username,password
+#login - 1,username,password
+#sendMessage - 2,userfrom,username,message
+#readChat - 3,username,username
+#start meeting - 4,meeting_link,[port1,port2,port3,port4,ip]
+#join meeting - 5,meeting_link
+
+#server protocols:
+#invalid message - -1
+#Fail - 0
+#Success -1
+#login/register success - 2,name1,name2,name3,...name10
+#messages - 3,(messagefrom,message),(messagefrom,message)
+#meeting ip and ports - 5,[port1,port2,port3,port4,ip]
+#send ip - 6,ip
